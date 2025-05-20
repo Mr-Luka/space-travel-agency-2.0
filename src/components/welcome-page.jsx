@@ -35,7 +35,7 @@ const handleSuccessfulSignUp = (name) => {
             </>
           )}
         </div>
-        <video src={welcomeVideo} autoPlay loop muted playsInline muted autoPlay loop></video>
+        <video src={welcomeVideo} autoPlay loop muted></video>
       </div>
       <SignUpModal ref={modalRef} onClose={handleCloseModal} onSignUpSuccess={handleSuccessfulSignUp} />
     </>

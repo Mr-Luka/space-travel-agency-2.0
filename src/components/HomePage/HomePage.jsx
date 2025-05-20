@@ -10,7 +10,7 @@ export default function HomePage({ showDestinations, userName = "Explorer" }) {
     <div className="wrapper-home">
       {!showDestinations && (
         <div className="video-home">
-          <video id="home-video" src={AroundTheWorldHomePage} playsInline muted autoPlay loop/>
+          <video id="home-video" src={AroundTheWorldHomePage} autoPlay loop muted />
         </div>
       )}
       <div className="header">
