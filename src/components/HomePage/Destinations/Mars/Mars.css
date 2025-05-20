@@ -1,9 +1,20 @@
-.mars-title {
+
+
+.mars-title{
     margin-top: 5rem;
+    font-size: 5rem;
 }
 
 .destination-mars{
     animation: showUp 4000ms ease-in-out forwards;
+}
+
+p#destination.mars-title{
+    margin-right: 3rem;
+}
+
+p#catch{
+    width: 50%;
 }
 
 .mars-text{
@@ -14,6 +25,7 @@
     flex-direction: column;
     align-items: center;
 }
+
 
 .destination-promo-mars-1 video,
 .destination-promo-mars-2 video{

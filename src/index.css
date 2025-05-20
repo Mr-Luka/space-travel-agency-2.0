@@ -9,7 +9,6 @@
 /* Mobile first */
 body {
   width: 100%;
-  max-width: 768px;
   height: 100vh;
   margin: 0 auto;
 }
@@ -298,5 +297,68 @@ body {
   body {
     max-width: none;
     width: 100%;
+  }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: black;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .nav-links.open {
+    display: flex;
   }
 }

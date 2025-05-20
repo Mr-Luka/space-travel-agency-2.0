@@ -136,3 +136,26 @@
         opacity: 1;
     }
   }
+
+
+@media (max-width: 768px) {
+    .home-container, .header, .video-section {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    video {
+        width: 100vw !important;
+        height: auto !important;
+        object-fit: cover;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h1, h2, h3, p {
+        font-size: 1.1rem;
+    }
+}

@@ -10,7 +10,7 @@ export default function Mars(){
                 </div>
                 <div className="destination-segment destination-mars">
                     <div className="destination-info mars-segment">
-                        <p id="destination" className='mars-title'><span>MARS</span></p>
+                        <p id="destination" className='mars-title'>MARS</p>
                         <p id="catch">A Journey Beyond Imagination</p>
                         <div className='mars-text'>
                             <div className="destination-promo-mars-1">
