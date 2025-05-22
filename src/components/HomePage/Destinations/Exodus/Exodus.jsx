@@ -5,7 +5,10 @@ export default function Exodus() {
   return (
     <div className="destination-div">
       <div className="video-destination">
-        <video id="destination-video" src={PLANETS[0].planetVideo} autoPlay loop muted></video>
+        <video id="destination-video" autoPlay loop muted playsInline>
+          <source src={PLANETS[0].planetVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
       <div className="destination-segment exodus-segment">
         <div className="destination-info">

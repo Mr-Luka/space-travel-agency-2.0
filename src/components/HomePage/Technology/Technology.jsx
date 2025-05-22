@@ -5,11 +5,11 @@ export default function Technology() {
   return (
     <div className="technology-wrapper">
       <div className="video-technology">
-  <video id="technology-video" autoPlay loop muted playsInline>
-    <source src={technology.technology} type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-</div>
+        <video id="technology-video" autoPlay loop muted playsInline>
+          <source src={technology.technology} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
       <div className="tech-segment">
         <div className="tech-info">

@@ -1,8 +1,4 @@
-.destination-div {
-  position: relative;
-  width: 100%;
-  background-color: black;
-}
+
 
 #destination-video {
   position: absolute;
@@ -28,8 +24,9 @@
 }
 
 .destination-plantia-title {
-    margin-top: 10rem;
+    margin-top: 2rem;
 }
+
 
 #catch {
   font-size: 1.3rem;
