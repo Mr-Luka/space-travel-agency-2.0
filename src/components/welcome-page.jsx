@@ -35,7 +35,12 @@ const handleSuccessfulSignUp = (name) => {
             </>
           )}
         </div>
-        <video src={welcomeVideo} autoPlay loop muted></video>
+        <div className="video-welcome">
+        <video id="welcome-video" autoPlay loop muted playsInline>
+          <source src={welcomeVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       </div>
       <SignUpModal ref={modalRef} onClose={handleCloseModal} onSignUpSuccess={handleSuccessfulSignUp} />
     </>

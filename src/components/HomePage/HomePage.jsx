@@ -9,8 +9,11 @@ export default function HomePage({ showDestinations, userName = "Explorer" }) {
     <div className="wrapper-home">
       {!showDestinations && (
         <div className="video-home">
-          <video id="home-video" src={AroundTheWorldHomePage} autoPlay loop muted />
-        </div>
+        <video id="home-video" autoPlay loop muted playsInline>
+          <source src={AroundTheWorldHomePage} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       )}
       <header className="header">
         <div className="welcome-universe-tour">

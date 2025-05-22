@@ -10,7 +10,6 @@ export default function Crew(){
                 </div>
                 <div className="crew-segment">
                     <div className="crew-info">
-                        <p id="crew" className="typewriter-animation cursor">Meet our crew</p>
                         <div className="general-1">
                             <img className="generals" id="main-general" src={crew[0].general1}/>
                             <div className='general-info'>

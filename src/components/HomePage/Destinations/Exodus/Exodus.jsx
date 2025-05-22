@@ -24,13 +24,13 @@ export default function Exodus() {
               <div className="destination-promo" key={i}>
                 {i % 2 === 0 ? (
                   <>
-                    <video className="two-promo-vid" src={section.video} autoPlay loop muted></video>
+                    <video className="two-promo-vid" src={section.video} autoPlay loop muted playsInline></video>
                     <p>{section.text}</p>
                   </>
                 ) : (
                   <>
                     <p>{section.text}</p>
-                    <video className="two-promo-vid" src={section.video} autoPlay loop muted></video>
+                    <video className="two-promo-vid" src={section.video} autoPlay loop muted playsInline></video>
                   </>
                 )}
               </div>

@@ -13,7 +13,7 @@ export default function Plantia() {
   return (
     <div className="destination-div">
       <div className="video-destination">
-        <video id="destination-video" src={PLANETS[1].planetVideo} autoPlay loop muted></video>
+        <video id="destination-video" src={PLANETS[1].planetVideo} autoPlay loop muted playsInline></video>
       </div>
       <div className="destination-segment plantia-segment">
         <div className="destination-info">
@@ -26,11 +26,11 @@ export default function Plantia() {
                 {i % 2 === 0 ? (
                   <>
                     <p>{section.text}</p>
-                    <video className="plantia-promo-vid" src={section.video} autoPlay loop muted></video>
+                    <video className="plantia-promo-vid" src={section.video} autoPlay loop muted playsInline></video>
                   </>
                 ) : (
                   <>
-                    <video className="plantia-promo-vid" src={section.video} autoPlay loop muted></video>
+                    <video className="plantia-promo-vid" src={section.video} autoPlay loop muted playsInline></video>
                     <p>{section.text}</p>
                   </>
                 )}
@@ -38,7 +38,7 @@ export default function Plantia() {
             ))}
           </div>
 
-          <video className="plantia-promo-vid" id="plantia-6-video" src={PLANETS[1].promoVideo.video6} autoPlay loop muted></video>
+          <video className="plantia-promo-vid" id="plantia-6-video" src={PLANETS[1].promoVideo.video6} autoPlay loop muted playsInline></video>
           <p id="destination-plantia-6">Let us make your dream of visiting Plantia a reality!</p>
         </div>
       </div>

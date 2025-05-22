@@ -17,7 +17,12 @@ export default function Destinations({ planetName, planetWelcome, species, plane
 
   return (
     <div className="destination-card">
-      <video src={planetVideo} autoPlay muted loop className="planet-video" />
+    <div className="video-destinations">
+        <video id="destinations-video" autoPlay loop muted playsInline>
+          <source src={planetVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <div className="text">
         <p className="sub-heading">Destination:</p>
         <h1 className="title-destination">{planetName}</h1>

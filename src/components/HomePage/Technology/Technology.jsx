@@ -16,7 +16,7 @@ export default function Technology() {
           <p className="technology-title">Our Technology</p>
 
           <div className="tech">
-            <video id="technology-video-rocket" src={technology.rocket} autoPlay loop muted></video>
+            <video id="technology-video-rocket" src={technology.rocket} autoPlay loop muted playsInline></video>
           </div>
 
           <h2 className="tech-title">Advanced Technology</h2>
