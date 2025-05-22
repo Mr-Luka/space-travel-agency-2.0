@@ -43,12 +43,14 @@
 }
 
 .generals {
-    width: 35%;
+    width: 45%;
+    height: 100%;
     border-radius: 30px;
     border: 10px solid rgba(90, 104, 1, 0.863);
     box-shadow: rgb(0, 255, 213) 11px 6px 2rem -3px;
 }
 #main-general{
+    width: 65%;
     border: 10px solid rgba(104, 1, 1, 0.863);
     box-shadow: rgb(255, 0, 0) 11px 6px 2rem -3px;
 }
@@ -61,17 +63,19 @@
     font-size: 1.2rem;
 }
 
+.general-info p {
+    font-size: 1rem;
+}
+
 .general-info p:first-child {
     text-align: center;
     margin-bottom: 2rem;
 }
 
 .general-info p:first-child span {
-    font-size: 2rem;
+    font-size: 1rem;
     background-color: rgba(165, 42, 42, 0.223);
-    border-radius: 15px;;
     padding: 1rem;
-    box-shadow: rgb(96, 0, 0) 11px 6px 2rem -3px;
 }
 
 .general-2{
@@ -100,7 +104,7 @@
 
     .general-info-2{
         height: 50%;
-        margin-top: 20rem;
+        margin-top: 10rem;
     }
 }
 

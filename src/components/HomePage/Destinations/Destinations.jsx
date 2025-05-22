@@ -2,8 +2,6 @@ import './Destinations.css';
 import { Link } from 'react-router-dom';
 
 export default function Destinations({ planetName, planetWelcome, species, planetVideo }) {
-
-  // Function that will determine correct route
   const getDestinationLink = (name) => {
     switch (name.toLowerCase()) {
       case 'exodus':
@@ -13,7 +11,7 @@ export default function Destinations({ planetName, planetWelcome, species, plane
       case 'plantia':
         return '/plantia';
       default:
-        return '/destinations'; // fallback
+        return '/destinations';
     }
   };
 

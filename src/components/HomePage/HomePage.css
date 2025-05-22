@@ -7,8 +7,6 @@
   overflow: hidden;
 }
 
-
-
 .video-home video {
   position: fixed;
   top: 0;
@@ -24,19 +22,22 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   color: white;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.094); 
-  padding: 20px 2.5rem;
+  padding: 20px 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .welcome-universe-tour {
   margin-top: 0.5rem; 
   animation: fadeRight 2000ms ease-in-out forwards;
+  flex: 1 1 100%;
+  text-align: center;
 }
 
 .welcome-universe-tour h1 {
@@ -44,12 +45,11 @@
   font-size: 2rem;
   -webkit-text-stroke: 1px white;
   margin-bottom: 0.5rem;
-  margin-right: 5rem;
 }
-
 
 .nav-bar {
   animation: fadeLeft 2000ms ease-in-out forwards;
+  flex: 1 1 100%;
 }
 
 .nav-ul {
@@ -57,19 +57,18 @@
   color: white;
   padding: 0;
   display: flex;
-  margin-right: 1rem;
-  gap: 30px; /* Adjust spacing */
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 15px;
 }
 
 .nav-ul li {
-  color: white;
-  cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .nav-ul li a {
   color: white;
-  list-style: none;
   text-decoration: none;
 }
 
@@ -83,56 +82,85 @@
   text-align: center;
   z-index: 1;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 1rem;
+  width: 100%;
 }
 
 .welcome-name h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   animation: showUp 4000ms ease-in-out forwards;
+  line-height: 1.5;
+}
+
+span#your {
+  font-size: 2rem;
+  animation: showUp 5000ms ease-in-out forwards;
+  color: rgb(0, 255, 170);
 }
 
 .welcome-name h2 span {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 @keyframes fadeLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(120px)
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0)
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(120px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0)
+  }
 }
 @keyframes fadeRight {
-    0% {
-        opacity: 0;
-        transform: translateX(-120px)
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0)
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-120px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0)
+  }
 }
 
 @keyframes showUp {
-    0% {
-      opacity: 0;
-    }
-    25% {
-        opacity: 0.25;
-    }
-    50%{
-        opacity: 0.5;
-    }
-    75%{
-        opacity: 0.75;
-    }
-    100%{
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
   }
+  25% {
+    opacity: 0.25;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  75%{
+    opacity: 0.75;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .welcome-name h2 {
+    font-size: 1.3rem;
+  }
+
+  .welcome-name h2 span {
+    font-size: 2rem;
+  }
+}

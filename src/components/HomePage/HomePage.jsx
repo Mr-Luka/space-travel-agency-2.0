@@ -1,9 +1,8 @@
 import AroundTheWorldHomePage from '../../../public/home-page.mp4';
-import { Link } from 'react-router-dom'; // Import Link
-import {PLANETS} from '../Planets/planets.js';
+import { Link } from 'react-router-dom';
+import { PLANETS } from '../Planets/planets.js';
 import Destinations from './Destinations/Destinations';
 import './HomePage.css';
-
 
 export default function HomePage({ showDestinations, userName = "Explorer" }) {
   return (
@@ -13,23 +12,23 @@ export default function HomePage({ showDestinations, userName = "Explorer" }) {
           <video id="home-video" src={AroundTheWorldHomePage} autoPlay loop muted />
         </div>
       )}
-      <div className="header">
+      <header className="header">
         <div className="welcome-universe-tour">
           <h1>Universe TourX</h1>
         </div>
-        <div className="nav-bar">
+        <nav className="nav-bar">
           <ul className="nav-ul">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/destinations">Destinations</Link></li>
             <li><Link to="/crew">Crew</Link></li>
             <li><Link to="/technology">Technology</Link></li>
           </ul>
-        </div>
-      </div>
+        </nav>
+      </header>
 
       {!showDestinations && (
         <div className="welcome-name">
-          <h2>{userName}<br /><span>Welcome</span><br />to YOUR journey</h2>
+          <h2>{userName}<br /><span>Welcome</span><br />to <span id="your">YOUR</span> journey</h2>
         </div>
       )}
 

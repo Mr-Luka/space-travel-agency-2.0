@@ -6,7 +6,7 @@ export default function Crew(){
     return (
             <div className="crew">
                 <div className="video-destination">
-                     <video id="destination-video-screw" src={crew[0].spaceStation} autoPlay loop muted></video>
+                     <video id="destination-video-screw" src={crew[0].spaceStation} autoPlay loop muted  playsInline></video>
                 </div>
                 <div className="crew-segment">
                     <div className="crew-info">
